@@ -1,8 +1,7 @@
 from datetime import datetime
+from flask_blog import app
 from pynamodb.models import Model
 from pynamodb.attributes import UnicodeAttribute, NumberAttribute, UTCDateTimeAttribute
-from flask_blog import app
-
 
 class Entry(Model):
     class Meta:
